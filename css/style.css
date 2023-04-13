@@ -1,0 +1,293 @@
+		body {
+		  font-family: Arial, sans-serif;
+		  margin: 0;
+		  padding: 0;
+		  margin-top: 2%;
+		  margin-left: 3%;
+		}
+
+		h1 {
+		  margin-top: 0;
+		}
+
+		label {
+		  margin-top: 1%;
+		  margin-left: 0.2%;
+		  font-size: 28px;
+		}
+
+		label input[type="checkbox"] {
+		  margin-right: -7%;
+		  margin-left: -7%;
+		  
+		  -webkit-transform: scale(1.5);
+		  transform: scale(1.5);
+		}
+
+		label.checkbox {
+		  display: flex;
+		  align-items: center;
+		  margin-left: 3%;
+		}
+
+		select#currency {
+		  width: 350px;
+		  height: 45px;
+		  
+		  font-size: 20px;
+		}
+
+		select#currency option {
+		  font-size: 23px;
+		}
+
+		form {
+		  display: flex;
+		  flex-direction: column;
+		  margin-top: 50px;
+		}
+
+		input, textarea {
+		  padding: 10px;
+		  margin-left: 5px;
+		  margin-top: 11px;
+		  border-radius: 5px;
+		  border: 1px solid #ccc;
+		  width: 300px;
+		  font-size: 16px;
+		}
+
+		textarea {
+		  width: 25%;
+		  height: 168px;
+		  font-size: 22px;
+		}
+
+		button {
+		  padding: 10px;
+		  margin: 10px;
+		  border-radius: 5px;
+		  background-color: #007bff;
+		  color: #fff;
+		  border: none;
+		  cursor: pointer;
+		  font-size: 20px;
+		  width: 200px;
+		}
+
+		.low_result, .source_result, .high_result {
+		  margin-top: 50px;
+		  font-size: 40px;
+		}
+
+		#get_calculations{
+		  margin-top: 2%;
+		}
+
+		#amount{
+		  height: 80px;
+		  font-size: 40px;
+		}
+
+		/* Стили для мобильных устройств */
+
+		@media screen and (max-width: 767px) {
+		  label {
+		    font-size: 40px;
+		  }
+
+		  select#currency {
+		    width: 100%;
+		  }
+
+		  textarea {
+		    width: 100%;
+		    height: 160px;
+		    font-size: 20px;
+		  }
+
+		  button {
+		    width: 100%;
+		  }
+
+		  .low_result, .source_result, .high_result {
+		    font-size: 50px;
+		  }
+
+		  #get_calculations {
+		    margin-top: 20px;
+		  }
+		}
+		
+		
+		
+		/* Общие стили для всех устройств */
+
+		.low_result, .source_result {
+		  border-top: 1px solid #ccc;
+		  padding-top: 10px;
+		}
+
+		.source_result, .high_result {
+		  border-top: 1px solid #ccc;
+		  padding-top: 10px;
+		  margin-top: 10px;
+		}
+		
+		
+		
+		button {
+		  background-color: #3498db;
+		  color: #fff;
+		  border: none;
+		  cursor: pointer;
+		  font-size: 20px;
+		  border-radius: 5px;
+		  padding: 10px 20px;
+		  transition: all 0.2s ease-in-out;
+		}
+
+		button:hover {
+		  background-color: #2980b9;
+		}
+
+		button#clear {
+		  background-color: #fff;
+		  color: #3498db;
+		  border: 1px solid #3498db;
+		  transition: all 0.2s ease-in-out;
+		}
+
+		button#clear:hover {
+		  background-color: #3498db;
+		  color: #fff;
+		}
+
+		button[type="submit"] {
+		  background-color: #27ae60;
+		  color: #fff;
+		  border: none;
+		  cursor: pointer;
+		  font-size: 20px;
+		  border-radius: 5px;
+		  padding: 10px 20px;
+		  transition: all 0.2s ease-in-out;
+		}
+
+		button[type="submit"]:hover {
+		  background-color: #219653;
+		}
+		
+		
+		
+	@media screen and (max-width: 767px) {
+	  /* ... */
+	  form {
+	    margin-top: 20px;
+	  }
+
+	  #exchange-rates, #amount {
+	    width: 100%;
+	    margin-top: 5px;
+	  }
+
+	  label.checkbox {
+	    margin-top: 10px;
+	  }
+
+	  button#clear {
+	    margin-bottom: 10px;
+	  }
+
+	  .low_result, .source_result, .high_result {
+	    margin-top: 30px;
+	  }
+	  /* ... */
+	}
+	
+	
+	
+	select#currency {
+	  margin-top: 15px;
+	  width: 350px;
+	  height: 70px;
+	  font-size: 30px;
+	  border-radius: 5px;
+	  border: 1px solid #ccc;
+	  padding: 10px;
+	  appearance: none;
+	  -webkit-appearance: none;
+	  -moz-appearance: none;
+	  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7.406 9.593L12 14.186l4.594-4.593 1.414 1.414L12 16.014 5.593 9.607l1.414-1.414zM17 4H7a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1z'/%3E%3C/svg%3E") no-repeat right center / 20px 20px;
+	}
+
+	select#currency:focus {
+	  outline: none;
+	  border: 2px solid #007bff;
+	}
+
+
+	select#currency {
+	  appearance: none;
+	  -webkit-appearance: none;
+	  -moz-appearance: none;
+	  background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><path d='M4.4 10.1L15.9 21.6c.6.6 1.5.6 2.1 0l11.5-11.5c.6-.6.6-1.5 0-2.1l-2.1-2.1c-.6-.6-1.5-.6-2.1 0L16 16.4 6.5 6.9c-.6-.6-1.5-.6-2.1 0l-2.1 2.1c-.6.7-.6 1.5 0 2.1z' fill='%23363B48'/></svg>") no-repeat;
+	  background-position: calc(100% - 8px) center;
+	  background-size: 16px;
+	  border: 1px solid #ccc;
+	  border-radius: 5px;
+	  color: #555;
+	  font-size: 20px;
+	  font-weight: 500;
+	  height: 55px;
+	  padding: 10px 40px 10px 10px;
+	  margin-top: 10px;
+	  width: 100%;
+	}
+
+	@media (max-width: 767px) {
+	  select#currency {
+	    font-size: 36px;
+	    height: 75px;
+	    padding: 8px 36px 8px 8px;
+	  }
+	}
+
+	.checkbox-container {
+	  display: flex;
+	  align-items: center;
+	  margin-top: 10px;
+	}
+
+	.checkbox-container input[type="checkbox"] {
+	  margin-right: 10px;
+	  appearance: none;
+	  -webkit-appearance: none;
+	  -moz-appearance: none;
+	  width: 25px;
+	  height: 25px;
+	  border: 2px solid #ccc;
+	  border-radius: 5px;
+	  cursor: pointer;
+	}
+
+	.checkbox-container input[type="checkbox"]:checked {
+	  background-color: #007bff;
+	}
+
+	.checkbox-container input[type="checkbox"]:checked::before {
+	  content: "\2713";
+	  font-size: 22px;
+	  color: #fff;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  width: 100%;
+	  height: 100%;
+	}
+
+	.checkbox-container label {
+	  font-size: 45px;
+	  cursor: pointer;
+	}
+
